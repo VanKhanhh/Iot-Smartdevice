@@ -1,0 +1,23 @@
+1/Think of other systems you have around you that read data from a sensor and use that to make decisions. One example would be the thermostat on an oven. Can you find more?
+  -Automatic Streetlights – Light sensors detect ambient brightness and turn the lights on at night and off during the day.
+  -Motion-Activated Lights – Motion sensors detect movement and turn the lights on when someone enters a room.
+  -Car Parking Sensors – Ultrasonic sensors in cars detect obstacles and alert the driver when they get too close.
+  -Smart Sprinkler Systems – Soil moisture sensors measure the water content in the ground and activate sprinklers only when necessary.
+
+2/What other data could help make an Internet connected thermostat smarter?
+  -Weather data – If the thermostat knows the weather forecast, it can adjust the temperature accordingly (e.g., lowering heating when it's getting warmer or increasing it before a cold front).
+  -Motion data – Motion sensors or data from other IoT devices can help determine when people are home and adjust the temperature accordingly.
+  -User schedule – If integrated with the user’s calendar, the thermostat can adjust temperatures based on work hours or sleep schedules.
+  -Peak electricity hours – Data from the electricity provider can help the thermostat adjust its operation to save costs during peak hours.
+
+3/Think of other scenarios where privacy is important so processing of data would be better done on the edge rather than in the cloud. As a hint - think about IoT devices with cameras or other imaging devices on them.
+  - Security Cameras & Home Surveillance
+    + Smart security cameras can process footage locally to detect motion or recognize faces without sending continuous video streams to the cloud. This prevents sensitive home or business footage from being exposed to potential cyber threats.
+  - Healthcare & Wearable Devices
+    + Medical devices like smartwatches or glucose monitors can analyze health data (heart rate, oxygen levels, etc.) locally instead of transmitting it to the cloud, ensuring private health data remains secure.
+
+4/What programming languages are you familiar with? Are they supported on Linux?
+  - C – Uses gcc for compilation.
+  - C++ – Uses g++ (part of GCC).
+  - Python – Pre-installed on most Linux systems, can be managed with pip.
+  - Java – Uses OpenJDK (javac for compiling, java for running).
