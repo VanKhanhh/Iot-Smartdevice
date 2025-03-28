@@ -1,1 +1,31 @@
+1/Do some research. If you have a lot of IoT devices, how can you ensure your MQTT broker can handle all the messages?
+- Use a scalable broker 
+- Enable clustering & load balancing 
+- Optimize messages 
+- Design efficient topics 
+- Allocate resources wisely 
+- Monitor & scale 
+
+2/What other situations would require data from multiple sensors to be evaluated before sending commands?
+- Smart Homes: HVAC (temp + humidity), lights (motion + ambient light).
+- Autonomous Vehicles: Collision avoidance (LiDAR + radar), lane keeping (GPS + vision).
+- Industrial Automation: Machine safety (vibration + temp), robotics (proximity + force).
+- Healthcare: Fall detection (accelerometer + heart rate), smart prosthetics (EMG + motion).
+- Agriculture: Irrigation (soil moisture + weather), air quality (CO2 + humidity).
+
+3/What situations might require an assured delivery message over a fire and forget message?
+- Emergencies: Fire alarms, medical alerts.
+- Industrial control: Machine shutdowns, pressure alerts.
+- Finance: Payment processing, stock trades.
+- Utilities: Energy reports, power failures.
+- Autonomous systems: Navigation, train signals.
+
+4/ What happens to MQTT messages if there is no listener?
+- QoS 0 (Fire-and-Forget) – The message is lost if no listener is online.
+- QoS 1 (At Least Once) – The broker stores the message and resends it when a listener subscribes.
+- QoS 2 (Exactly Once) – The broker ensures delivery when a listener connects.
+- Retained Messages – The broker keeps the last message on a topic and delivers it to new subscribers.
+- Persistent Sessions – If enabled, the broker queues messages for offline clients until they reconnect.
+
+5/How could the device or server code ensure commands are always sent and handled in order over MQTT if needed?
 
