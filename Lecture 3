@@ -1,1 +1,28 @@
+1/Do some research. What sensors does your phone have?
+  - Motion Sensors: Accelerometer, gyroscope, magnetometer.
+  - Environmental Sensors: Barometer, ambient light, proximity sensor.
+  - Health Sensors: Heart rate, SpO2 (if supported).
+  - Navigation Sensors: GPS, GLONASS, BeiDou, Galileo.
+  - Biometric & Optical: Fingerprint, IR blaster, TOF sensor.
+  - Audio: Microphone, ultrasound (in some models).
 
+2/What do you think happens if the sensor returns a higher voltage than was sent (for example coming from an external power supply)
+- Damage to the Sensor or Microcontroller – If the voltage exceeds the input limits of the receiving circuit (e.g., ADC of a microcontroller), it could permanently damage the components.
+- Incorrect Readings – The system might interpret the excess voltage as erroneous data, leading to faulty measurements.
+- Protection Mechanisms Activate – Many circuits include clamping diodes (e.g., Zener diodes, TVS diodes) to protect against overvoltage, which might prevent damage but could cause heating or failure if prolonged.
+- Power Feedback Issues – If the sensor is on a shared bus (e.g., I2C, SPI), it might interfere with other devices by unintentionally supplying power back into the circuit.
+- Voltage Regulator Failure – If the sensor relies on a regulated voltage supply, excess voltage might bypass or overload the regulator, affecting other components.
+
+3/ Do some research. What actuators does your phone have?
+- Vibration: LRA/ERM motor for haptics.
+- Audio: Speakers, earpiece, noise-canceling mic.
+- Display: OLED/LCD pixels, refresh rate control.
+- Camera: Autofocus motor, OIS, aperture control.
+- Biometrics: Fingerprint scanner, Face ID projector.
+- Connectivity: Taptic Engine (Apple), 5G mmWave antenna.
+
+4/What do you think happens if the IoT device sends a higher voltage than the actuator can handle?
+-Damage to the Actuator
+-Unexpected Behavior
+-Short Circuit or System Failure
+-Protection Circuit Activation
